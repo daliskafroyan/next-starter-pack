@@ -1,8 +1,8 @@
-import type { AppProps } from "next/app";
+import type { AppProps } from 'next/app';
 
-import { GlobalStyles } from "twin.macro";
+import { GlobalStyles } from 'twin.macro';
 
-const App = ({ Component, pageProps }: any) => (
+const App = ({ Component, pageProps }: AppProps) => (
     <div>
         <GlobalStyles />
         <Component {...pageProps} />
