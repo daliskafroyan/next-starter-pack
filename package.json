@@ -8,7 +8,8 @@
         "start": "next start",
         "lint": "next lint",
         "release": "standard-version",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "precommit": "lint-staged"
     },
     "dependencies": {
         "@emotion/css": "^11.5.0",
@@ -44,8 +45,7 @@
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
-            "eslint",
-            "prettier -w"
+            "eslint"
         ],
         "*.{json,css,scss,md}": [
             "prettier -w"
