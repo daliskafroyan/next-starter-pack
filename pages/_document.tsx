@@ -1,6 +1,7 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import { extractCritical } from "@emotion/server";
+import { extractCritical } from '@emotion/server';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx: any) {
@@ -11,7 +12,7 @@ export default class MyDocument extends Document {
             <>
                 {initialProps.styles}
                 <style
-                    data-emotion-css={critical.ids.join(" ")}
+                    data-emotion-css={critical.ids.join(' ')}
                     dangerouslySetInnerHTML={{ __html: critical.css }}
                 />
             </>
@@ -22,10 +23,10 @@ export default class MyDocument extends Document {
 
     render() {
         return (
-            <Html lang="en">
+            <Html lang='en'>
                 <Head>
                     <style
-                        data-emotion-css={this.props.ids?.join(" ")}
+                        data-emotion-css={this.props.ids?.join(' ')}
                         dangerouslySetInnerHTML={{ __html: this.props.css }}
                     />
                 </Head>
