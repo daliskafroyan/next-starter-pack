@@ -43,11 +43,11 @@
         "typescript": "^4.5.2"
     },
     "lint-staged": {
-        "**/*.{js,jsx,ts,tsx,}": [
-            "eslint --max-warnings=100",
+        "*.{js,jsx,ts,tsx,}": [
+            "yarn run lint",
             "prettier -w"
         ],
-        "**/*.{json,css,scss,md}": [
+        "*.{json,css,scss,md}": [
             "prettier -w"
         ]
     }
