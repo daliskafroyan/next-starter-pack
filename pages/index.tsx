@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -13,9 +14,11 @@ const Home: NextPage = () => {
                 />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <h2 tw='bg-yellow-300 font-bold p-3 md:text-2xl'>
+            <h2 tw='p-3 font-bold bg-yellow-300 md:text-2xl'>
                 Hi! Welcome to your first Next.js siteaaaaaaaa.
             </h2>
+            <Image src='/vercel.svg' width={72} height={16} />
+            <Image src='/vercel.svg' width={72} height={16} />
             <Image src='/vercel.svg' width={72} height={16} />
             <Image src='/vercel.svg' width={72} height={16} />
             <Image src='/vercel.svg' width={72} height={16} />

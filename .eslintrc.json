@@ -1,18 +1,18 @@
-module.exports = {
-    env: {
-        browser: true,
-        es2021: true,
-        node: true,
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
     },
-    plugins: ["@typescript-eslint", "simple-import-sort"],
-    extends: [
+    "plugins": ["@typescript-eslint", "simple-import-sort"],
+    "extends": [
         "eslint:recommended",
         "next",
         "next/core-web-vitals",
         "plugin:@typescript-eslint/recommended",
-        "prettier",
+        "prettier"
     ],
-    rules: {
+    "rules": {
         "no-unused-vars": "off",
         "no-console": "warn",
         "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -22,7 +22,7 @@ module.exports = {
         "simple-import-sort/imports": [
             "warn",
             {
-                groups: [
+                "groups": [
                     // ext library & side effect imports
                     ["^@?\\w", "^\\u0000"],
                     // {s}css files
@@ -44,17 +44,17 @@ module.exports = {
                         "^\\.\\./\\.\\./?$",
                         "^\\.\\./\\.\\.(?!/?$)",
                         "^\\.\\./\\.\\./\\.\\./?$",
-                        "^\\.\\./\\.\\./\\.\\.(?!/?$)",
+                        "^\\.\\./\\.\\./\\.\\.(?!/?$)"
                     ],
                     ["^@/types"],
                     // other that didnt fit in
-                    ["^"],
-                ],
-            },
-        ],
+                    ["^"]
+                ]
+            }
+        ]
     },
-    globals: {
-        React: true,
-        JSX: true,
-    },
-};
+    "globals": {
+        "React": true,
+        "JSX": true
+    }
+}
