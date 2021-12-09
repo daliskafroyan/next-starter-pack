@@ -1,8 +1,12 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import { GlobalStyles } from "twin.macro";
 
-export default MyApp
+const App = ({ Component, pageProps }: any) => (
+    <div>
+        <GlobalStyles />
+        <Component {...pageProps} />
+    </div>
+);
+
+export default App;
