@@ -8,8 +8,7 @@
         "start": "next start",
         "lint": "next lint",
         "release": "standard-version",
-        "prepare": "husky install",
-        "precommit": "lint-staged"
+        "prepare": "husky install"
     },
     "dependencies": {
         "@emotion/css": "^11.5.0",
@@ -35,18 +34,11 @@
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-simple-import-sort": "^7.0.0",
         "husky": "^7.0.4",
-        "lint-staged": "^12.1.2",
         "prettier": "2.5.1",
         "prettier-plugin-sort-class-names": "^3.0.1",
         "standard-version": "^9.3.2",
         "tailwindcss": "^2.2.19",
         "twin.macro": "^2.8.2",
         "typescript": "^4.5.2"
-    },
-    "lint-staged": {
-        "**/*.{js,jsx,ts,tsx}": [
-            "yarn eslint --fix --quiet --config .eslintrc.json --resolve-plugins-relative-to .",
-            "yarn prettier --write"
-        ]
     }
 }
