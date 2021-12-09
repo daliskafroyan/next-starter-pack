@@ -1,6 +1,7 @@
 module.exports = {
-    '**/*.{js,jsx,ts,tsx,}?(x)': (filenames) =>
-        `next lint --fix --file ${filenames
-            .map((file) => file.split(process.cwd())[1])
-            .join(' --file ')}`,
+    // Run type-check on changes to TypeScript files
+    '**/*.(tsx|jsx|js|ts)?(x)': () => 'yarn type-check',
+    // Run ESLint on changes to JavaScript/TypeScript files
+    '**/*.(tsx|jsx|js|ts)?(x)': (filenames) =>
+        `yarn lint . ${filenames.join(' ')}`,
 };

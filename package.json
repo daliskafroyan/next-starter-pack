@@ -8,6 +8,7 @@
         "start": "next start",
         "lint": "next lint",
         "release": "standard-version",
+        "type-check": "tsc --project tsconfig.json --pretty --noEmit",
         "prepare": "husky install"
     },
     "dependencies": {
@@ -44,7 +45,7 @@
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx,}": [
-            "yarn run lint",
+            "eslint",
             "prettier -w"
         ],
         "*.{json,css,scss,md}": [
