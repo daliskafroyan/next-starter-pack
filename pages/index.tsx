@@ -13,7 +13,7 @@ const Home: NextPage = () => {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <h2 tw='bg-yellow-300 font-bold p-3 md:text-2xl'>
-                Hi! Welcome to your first Next.js siteaaaaaaaa.
+                Nextjs with twin.macro!
             </h2>
         </div>
     );
