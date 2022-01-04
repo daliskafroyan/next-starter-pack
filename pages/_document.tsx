@@ -25,6 +25,19 @@ export default class MyDocument extends Document {
         return (
             <Html lang='en'>
                 <Head>
+                    <link
+                        rel='preconnect'
+                        href='https://fonts.googleapis.com'
+                    />
+                    <link
+                        rel='preconnect'
+                        href='https://fonts.gstatic.com'
+                        crossorigin
+                    />
+                    <link
+                        href='https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap'
+                        rel='stylesheet'
+                    />
                     <style
                         data-emotion-css={this.props.ids?.join(' ')}
                         dangerouslySetInnerHTML={{ __html: this.props.css }}

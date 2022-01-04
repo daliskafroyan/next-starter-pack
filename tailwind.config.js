@@ -1,7 +1,11 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
     theme: {
         extend: {
-            colors: {},
+            fontFamily: {
+                primary: ['Manrope', ...fontFamily.sans],
+            },
         },
     },
     plugins: [],
